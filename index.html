@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assents/icons/icon_CEP.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Consultar Endereço</title>
+
+</head>
+
+<body>
+
+        <main class="container">
+
+            <section class="home">
+
+                <img src="./assents/icons/icon_CEP.png" alt="MAPA.png">
+
+                <div class="homeInformations">
+
+                    <div class="homeSearch">
+
+                        <div id="startInfo" class="startInfo">
+
+                            <h1 class="homeTitle">Consultar Endereço</h1>
+    
+                        </div>
+
+                        <form class="homeSearchForm">
+    
+                            <input id="cepNumber" class="inputcep" type="text" maxlength="8" placeholder="Digite seu CEP" required>
+                            <button class="btn" type="button" onclick="consultcep()">Buscar</button>
+    
+                        </form>
+    
+                    </div>
+
+                    <div id="searchResult" class="homeSearchResult">
+
+                        <p class="result">Resultado</p>
+
+                        <div class="resultContent">
+
+                            
+                            <h3 class="resultTitle">Rua:</h3>
+                            <span id="rua"></span>
+
+                        </div>
+                        <div class="resultContent">
+
+                            <h3 class="resultTitle">Bairro:</h3>
+                            <span id="bairro"></span>
+
+                        </div>
+                        <div class="resultContent">
+
+                            <h3 class="resultTitle">Estado:</h3>
+                            <span id="estado"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
