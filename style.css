@@ -167,3 +167,25 @@ body {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .homeSearch {
+        width: 300px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .homeSearch {
+        width: 250px;
+    
+    }
+    
+    .homeTitle, .result{
+        font-size: 21px;
+    }
+
+    .homeSearchResult{
+        width: 250px;
+    }
+}
